@@ -1,16 +1,11 @@
-﻿Musica musica1 = new Musica();
-musica1.Nome = "Dead memories";
-musica1.Artista = "Slipknot";
-musica1.Duracao = 300;
-musica1.Disponivel = true;
-Console.WriteLine(musica1.Disponivel);
+﻿Album albumQueen = new Album();
+albumQueen.Nome = "A night at the opera";
 
-musica1.ExibirFichaTecnica();
+Musica musica1 = new Musica();
+musica1.Nome = "Love of my live";
 
 Musica musica2 = new Musica();
-musica2.Nome = "In The End";
-musica2.Artista = "Linkin Park";
-musica2.Duracao = 323;
-musica2.Disponivel = false;
+musica2.Nome = "Bohemian Rhapsody";
 
-musica2.ExibirFichaTecnica();
+albumQueen.AdicionarMusica(musica1);
+albumQueen.AdicionarMusica(musica2);

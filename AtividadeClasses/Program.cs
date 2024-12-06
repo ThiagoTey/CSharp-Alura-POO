@@ -58,4 +58,7 @@ class Produto
 
     public string Descricao => $"Nome : {this.nome}, Marca {this.marca} - {this.Preco}";
 
+    //Teste de lambda
+    public int Somar(int a, int b) => a + b;
 }
+
