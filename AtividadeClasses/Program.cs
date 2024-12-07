@@ -1,64 +1,41 @@
-﻿class Conta
+﻿
+void AtividadeConta()
 {
-    public string Titular { get; set; }
-    public int IdConta { get; set; }
-    public float Saldo { get; set; }
-    public int Senha { get; set; }
+    Titular titular1 = new Titular();
+    Conta conta1 = new Conta();
+
+    titular1.Nome = "Adamiltom";
+
+    conta1.Titular = titular1;
+    conta1.Saldo = 500;
+    conta1.Agencia = "234";
+
+    conta1.Consulta();
 }
 
-class Carro
+//AtividadeConta();
+
+void AtividadeProduto()
 {
-    private int ano;
-    public string Fabricante { get; set; }
-    public string Modelo { get; set; }
-    public int Ano { 
-        get {  return ano; }
-        set { if (value > 1960 || value < 2023) ano = value; 
-            else { Console.WriteLine("Ano inválido, insira um ano entre 1960 e 2023"); } 
-        }
-    }
-    public int QuantidadePortas { get; set; }
-    public int Velocidade { get; set; }
-    public string DescricaoDetalhada => $"Fabricante: {Fabricante} - Modelo : {Modelo} - Ano : {Ano}";
+    Produto produto1 = new Produto();
+    Produto produto2 = new Produto();
+
+    produto1.Nome = "Caneta";
+    produto1.Marca = "Aquela la";
+    produto1.Preco = 25;
+    produto1.Estoque = 10;
+
+    produto2.Nome = "Mouse";
+    produto2.Marca = "Aquela outra";
+    produto2.Preco = 45;
+    produto2.Estoque = 5;
+
+    EstoqueProdutos estoque1 = new EstoqueProdutos();
+    estoque1.AdicionarProduto(produto1);
+    estoque1.AdicionarProduto(produto2);
+    estoque1.Nome = "matriz";
+
+    estoque1.ExibirEstoque();
 }
 
-class Produto
-{
-    public string nome;
-    public string marca;
-    private float preco;
-    private float estoque;
-
-    public float Preco {
-        get => preco; 
-        set
-        {
-            if(value <= 0)
-            {
-                Console.WriteLine("Preco não pode ser zero ou negativo");
-            } else
-            {
-                preco = value;
-            }
-        }
-    }
-    public float Estoque {
-        get => estoque;
-        set
-        {
-            if(value < 0)
-            {
-                Console.WriteLine("Estoque não pode ser negativo");
-            } else
-            {
-                estoque = value;
-            }
-        }
-    }
-
-    public string Descricao => $"Nome : {this.nome}, Marca {this.marca} - {this.Preco}";
-
-    //Teste de lambda
-    public int Somar(int a, int b) => a + b;
-}
-
+AtividadeProduto();
