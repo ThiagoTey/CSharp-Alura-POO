@@ -38,4 +38,4 @@ void AtividadeProduto()
     estoque1.ExibirEstoque();
 }
 
-AtividadeProduto();
+//AtividadeProduto();
