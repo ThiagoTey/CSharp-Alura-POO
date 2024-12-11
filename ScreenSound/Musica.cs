@@ -5,6 +5,7 @@
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
     public string DescricaoResumida => $"A música {Nome} pertence a : {Artista}";
+    public Genero Genero { get; set; }
 
 
     public void ExibirFichaTecnica()
