@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenSound", "ScreenSound\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtividadeClasses", "AtividadeClasses\AtividadeClasses.csproj", "{00627043-353E-4CDB-87F2-D56BE54091A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtividadeClasses2", "AtividadeClasses2\AtividadeClasses2.csproj", "{9A6671C5-1590-48EE-96CD-A50376BB12B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{00627043-353E-4CDB-87F2-D56BE54091A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00627043-353E-4CDB-87F2-D56BE54091A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00627043-353E-4CDB-87F2-D56BE54091A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6671C5-1590-48EE-96CD-A50376BB12B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6671C5-1590-48EE-96CD-A50376BB12B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6671C5-1590-48EE-96CD-A50376BB12B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6671C5-1590-48EE-96CD-A50376BB12B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
