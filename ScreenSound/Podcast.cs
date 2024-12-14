@@ -13,7 +13,7 @@
     {
         Console.WriteLine($"Nome Podcast: {Nome}, Host: {Host}");
         Console.WriteLine("Episódios :");
-        foreach (Episodio episodio in Episodios)
+        foreach (Episodio episodio in Episodios.OrderBy(e => e.Ordem))
         {
             Console.WriteLine(episodio.Resumo);
         }
