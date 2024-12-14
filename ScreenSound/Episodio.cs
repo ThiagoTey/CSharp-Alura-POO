@@ -1,20 +1,20 @@
-﻿class Episodio(int ordem, int duracao, string titulo)
+﻿class Episodio(int ordem, string titulo ,int duracao)
 {
-    private string convidados = "";
+    private List<string> convidados = new();
     public int Ordem { get; } = ordem;
-    public int Duracao { get; } = duracao;
     public string Titulo { get; } = titulo;
+    public int Duracao { get; } = duracao;
     public string Resumo
     {
-        get => $"Episódio {Ordem}, Duração: {Duracao} minutos, Convidados: {convidados}";
+        get
+        {
+            string convidadosText = convidados.Count > 0 ? $"Convidados: {string.Join(", ", convidados)}" : string.Empty;
+            return $"Episódio {Ordem}, Titulo: {Titulo}, Duração: {Duracao} minutos, {convidadosText}";
+        }
     }
 
     public void AdicionarConvidados(string convidado)
     {
-        if (!string.IsNullOrEmpty(convidados))
-        { 
-            convidados += ", ";
-        }
-        convidados += convidado;
+        convidados.Add(convidado);
     }
 }
