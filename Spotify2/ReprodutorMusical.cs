@@ -55,4 +55,8 @@
         }
     }
 
+    public void DefinirVolume(int volume)
+    {
+        Volume = Math.Clamp(volume, 0, 100);
+    }
 }

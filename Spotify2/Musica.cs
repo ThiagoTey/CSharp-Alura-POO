@@ -5,4 +5,5 @@
     public GeneroMusical Genero { get; } = genero;
     public Album Album { get; } = album;
     public List<AvaliacaoMusica> Avaliacoes { get; set; }
+    public LetraMusica LetraMusica { get; set; }
 }
